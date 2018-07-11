@@ -1,0 +1,14 @@
+name:-
+id,pass
+value:-
+${id}
+${pass}
+
+
+enoced:-
+all checked
+include Equals?
+all checked
+
+
+
