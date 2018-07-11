@@ -1,0 +1,8 @@
+filename: E:/location/file.CSV
+variable name:ID.pass
+Ignore first line: False
+Delimiter:,
+allow quoted:False
+Recycle:True
+Stop thread:False
+sharing mode:All threads
