@@ -1,0 +1,19 @@
+import org.apache.commons.codec.binary.Base64;
+
+
+log.info("Base64 Encoding ClientID & ClientPassword");
+
+//Create the complete string which needs to be encoded
+String forEncoding = vars.get("ClientID") + ":" + vars.get("ClientPassword");
+
+log.info("forEncoding: " + forEncoding);
+
+//Encode the string
+byte[] encoded_ClientCredentials = Base64.encodeBase64(forEncoding.getBytes());
+
+
+//Save the encoded byte array into a String Variable
+vars.put("encoded_ClientCredentials", new String(encoded_ClientCredentials));
+
+
+log.info("encoded_ClientCredentials: " + vars.get("encoded_ClientCredentials"));
