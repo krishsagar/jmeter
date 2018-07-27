@@ -1,0 +1,1 @@
+jmeter -n -t E:\krishna\apache-jmeter-4.0\bin\lactation.jmx -l E:\krishna\apache-jmeter-4.0\bin\report-template\results\lactation1.jtl -e -o E:\krishna\lactationGraph
