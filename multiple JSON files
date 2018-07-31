@@ -1,0 +1,35 @@
+Suppose we have 10 JSON files, with filenames 100.txt, 101.txt, 103.txt….109.txt
+
+And the CSV file will look like:
+
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+
+CSV Data set config
+
+
+file name: D:/data/idand password.CSV
+variable names: json_file
+Delimiter: ,
+allow ...:False
+recycle ...:True
+stop ...:False
+sharing ...:All Threads
+
+
+
+The variable is JSON_FILE which takes the values of 100, 101, 102, etc… from the CSV file.
+Then we need to reference this variable in our __FileToString()  JMeter function, 
+
+${__FileToString(/Users/testing-excellence/Perf/blog/${__eval(${json_file})}.txt,,)}
+
+Users/testing-excellence/Perf/blog= will change
+json_file= will change
